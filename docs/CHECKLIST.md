@@ -1,0 +1,7 @@
+- [ ] 已完整阅读 /docs/CONTRACT.md 并逐项复述关键规则
+- [ ] 比对了两个范本（字段、层级、导出对象名完全一致）
+- [ ] 仅在允许的文件夹写入（app/[slug], app/games/game-data.ts, public/assets/[slug], public/game/[slug]）
+- [ ] 每个 content.ts 均包含：features(4 items)/whatIs/howToPlay/faq，字段名 1:1 对齐
+- [ ] page.tsx 仅导入模板并渲染，不改模板结构样式
+- [ ] game-data.ts 仅追加，不改已有条目顺序与字段名
+- [ ] OtherGames/页脚列表数据源仍为 game-data.ts（未改组件）

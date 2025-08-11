@@ -1,0 +1,31 @@
+[
+  {
+    // 必填：用于路由与目录名，只用小写字母/数字/连字符
+    "slug": "doodle-baseball",
+
+    // 必填：展示名
+    "title": "Doodle Baseball",
+
+    // 必填：封面图（你先放在 public/assets/doodle-baseball/cover.webp）
+    "coverImage": "/assets/doodle-baseball/cover.webp",
+
+    // 任选其一：
+    // A) iframe 模式
+    "type": "iframe",
+    "embedUrl": "https://example.com/doodle-baseball/index.html",
+
+    // B) 本地 html 模式（把 index.html 给我，Claude 负责放到 /public/game/doodle-baseball/index.html）
+    // "type": "local",
+    // "localHtmlPath": "/game/doodle-baseball/index.html",
+
+    // 可选：玩法配图
+    "howtoImage": "/assets/doodle-baseball/howto.webp",
+    "howtoAlt": "How to play Doodle Baseball online",
+
+    // 可选：SEO/文案风格提示（让 Claude 写四段 Features、WhatIs、HowToPlay、FAQ 时参考）
+    "styleHints": {
+      "tone": "friendly, concise",
+      "keywords": ["free online game", "unblocked", "no download"]
+    }
+  }
+]
