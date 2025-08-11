@@ -29,3 +29,23 @@ D. 严格通过 CONTRACT.md 校验：字段名、段落数量、导出对象名�
 - 只能在 app/[slug]、app/games/game-data.ts、public/assets/[slug]、public/game/[slug] 写文件。
 - 不允许编辑 components、templates、config、layout 等模板代码。
 - 若 new-games.json 缺字段或无法映射，必须先停止并给出缺失清单。
+
+## 常见问题
+
+### 路由配置问题
+- 新游戏页面404：检查是否需要重启开发服务器
+- 推荐直接使用外部URL而不是next.config.js重写规则
+
+### 数据同步问题  
+- Footer缺少新游戏：需同时更新`config/content.ts`中的`footer.games.links`
+- Footer使用硬编码链接，不会自动从game-data.ts获取
+
+### URL配置最佳实践
+外部游戏嵌入推荐做法：
+```typescript
+game: {
+  url: 'https://external-url.com/game/embed?params',
+  title: "game-name", 
+  externalUrl: 'https://external-url.com/game/embed?params'
+}
+```
